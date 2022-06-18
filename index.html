@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Barlow:ital,wght@1,600&family=Comforter&family=Commissioner:wght@400;500;600;700&family=Epilogue:ital,wght@0,500;0,700;1,500;1,700&family=Fraunces:opsz,wght@9..144,900&family=Heebo&family=IBM+Plex+Sans+Thai+Looped&family=Inria+Sans:wght@700&family=Josefin+Sans:ital,wght@0,300;1,300&family=Lato:wght@300;400;700&family=Luckiest+Guy&family=Manrope:wght@600;700;800&family=Montserrat:ital,wght@0,300;0,400;0,700;1,700&family=Open+Sans:ital@0;1&family=Overpass:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Tiro+Devanagari+Hindi:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registration Form</title>
+  </head>
+
+  <body>
+    <div id="allbox">
+      <div class="textBox">
+        <h1>Learn to code by <br />watching others</h1>
+        <p>
+          See how experienced developers solve problems in real-time.Watching
+          scripted tutorials is great,but understanding how developers think is
+          invaluable.
+        </p>
+        <div class="btn">
+          <button>
+            <a href="#"
+              ><span
+                style="font-weight: 600; font-family: 'Poppins', sans-serif"
+                >Try it free 7 days</span
+              >
+              then<br />$20/mo.thereafter</a
+            >
+          </button>
+        </div>
+      </div>
+      <div class="btn2">
+        <button>
+          <a href="#"
+            ><span style="font-weight: 600; font-family: 'Poppins', sans-serif"
+              >Try it free 7 days</span
+            >
+            then $20/mo.thereafter</a
+          >
+        </button>
+      </div>
+      <div id="generalFormBox">
+        <div class="formBox">
+          <form action="/action_page.php">
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="First Name"
+              required
+            />
+            <span class="errorMsd">First name cannot be empty</span>
+
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              placeholder="Last Name"
+              required
+            />
+            <span class="errorMsd">Last name cannot be empty</span>
+
+            <input type="email" id="email" placeholder="Email" required />
+            <span class="errorMsd">Looks like this is not an email</span>
+
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              minlength="8"
+              maxlength="20"
+              required
+            />
+            <span class="errorMsd">Password cannot be empty</span>
+
+            <div class="btn1">
+              <input type="submit" value="Claim your free trial" />
+              <!--<button><a href="#">Claim your free trial</a></button>-->
+            </div>
+          </form>
+          <p class="footer">
+            By clicking the button you're agreeing to our
+            <a href="#" class="footerLink">Terms and Conditions</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
